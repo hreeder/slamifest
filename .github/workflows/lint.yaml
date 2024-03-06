@@ -1,8 +1,10 @@
+name: Lint
 on: push
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    name: Hatch fmt check
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v4

@@ -1,9 +1,11 @@
+name: Publish
 on:
   release:
     types: [released] # This will only cover actual releases, not pre-releases
 
 jobs:
   release:
+    name: Release to PyPI
     runs-on: ubuntu-latest
 
     steps:
