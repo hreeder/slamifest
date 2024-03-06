@@ -40,7 +40,9 @@ Now upload a manifest to Slack with `slamifest upload`:
 ❯ slamifest upload A1234ABCDEF
 [default] Uploading manifest.json to A1234ABCDEF
 
-{'app_id': 'A1234ABCDEF', 'ok': True, 'permissions_updated': False}
+ok: True
+app_id: A1234ABCDEF
+permissions_updated: False
 ```
 
 * `-m/--manifest` can be specified to override the default `manifest.json` filename, ie `slamifest upload A1234ABCDEF -m slack_manifest.json`

@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
 name = "slamifest"
-dynamic = ["version"]
+dynamic = ["version", "urls"]
 description = ''
 readme = "README.md"
 requires-python = ">=3.8"
@@ -31,16 +31,15 @@ dependencies = [
   "requests",
 ]
 
-[project.urls]
-Documentation = "https://github.com/hreeder/slamifest#readme"
-Issues = "https://github.com/hreeder/slamifest/issues"
-Source = "https://github.com/hreeder/slamifest"
-
 [project.scripts]
 slamifest = "slamifest.cli:slamifest"
 
 [tool.hatch.version]
-path = "src/slamifest/__about__.py"
+# path = "src/slamifest/__about__.py"
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/slamifest/_version.py"
 
 [tool.hatch.envs.default]
 dependencies = [
