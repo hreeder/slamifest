@@ -32,9 +32,9 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/unknown/slamifest#readme"
-Issues = "https://github.com/unknown/slamifest/issues"
-Source = "https://github.com/unknown/slamifest"
+Documentation = "https://github.com/hreeder/slamifest#readme"
+Issues = "https://github.com/hreeder/slamifest/issues"
+Source = "https://github.com/hreeder/slamifest"
 
 [project.scripts]
 slamifest = "slamifest.cli:slamifest"
